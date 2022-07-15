@@ -7,4 +7,4 @@ https://vhwu79fjxk.execute-api.eu-west-1.amazonaws.com/dev/product
 https://vhwu79fjxk.execute-api.eu-west-1.amazonaws.com/dev/product/${id}
 
 Example:
-https://vhwu79fjxk.execute-api.eu-west-1.amazonaws.com/dev/products/1
+https://vhwu79fjxk.execute-api.eu-west-1.amazonaws.com/dev/product/1
