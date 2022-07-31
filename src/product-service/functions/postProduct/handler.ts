@@ -1,7 +1,7 @@
-import { middyfy } from "@libs/lambda";
-import { APIGatewayEvent } from "@models/apiGatewayEvent.model";
-import { ProductDetails } from "@models/product.model";
-import productService from "@services/product.service";
+import { middyfy } from "../../libs/lambda";
+import { APIGatewayEvent } from "../../models/apiGatewayEvent.model";
+import { ProductDetails } from "../../models/product.model";
+import productService from "../../services/product.service";
 
 export const postProduct: APIGatewayEvent = async (event) => {
   try {

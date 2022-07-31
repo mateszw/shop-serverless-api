@@ -1,5 +1,5 @@
-import { ProductDetails } from "@models/product.model";
-import ProductRepository from "@repositories/product.repository";
+import { ProductDetails } from "../models/product.model";
+import ProductRepository from "../repositories/product.repository";
 
 class ProductService {
   private productRepository: ProductRepository;

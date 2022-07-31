@@ -1,17 +1,24 @@
 {
-  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "lib": ["ESNext"],
     "types": ["node", "jest"],
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "esModuleInterop": true,
     "removeComments": true,
     "sourceMap": false,
     "target": "ES2020",
     "outDir": "lib"
   },
-  "include": ["src/**/*.ts", "serverless.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/product-service/serverless.ts",
+    "src/import-service/serverless.ts",
+    "src/common/*",
+    "src/product-service/libs"
+  ],
   "exclude": [
     "node_modules/**/*",
     ".serverless/**/*",
@@ -20,8 +27,5 @@
     ".vscode/**/*",
     "**/*.test.*",
     "**/__tests__/*"
-  ],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+  ]
 }

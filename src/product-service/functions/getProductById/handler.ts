@@ -1,10 +1,11 @@
-import { middyfy } from "@libs/lambda";
-import { APIGatewayEvent } from "@models/apiGatewayEvent.model";
-import ProductService from "@services/product.service";
+import { middyfy } from "../../libs/lambda";
+import { APIGatewayEvent } from "../../models/apiGatewayEvent.model";
+import ProductService from "../../services/product.service";
 
 export const getProductById: APIGatewayEvent = async (event) => {
   try {
     const product = await new ProductService().getProductById(
+      //@ts-ignore
       event.pathParameters.id
     );
     if (!product) {

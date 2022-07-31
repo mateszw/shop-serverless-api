@@ -1,6 +1,6 @@
 import { Client } from "pg";
 import config from "../database/config";
-import { Product, ProductDetails } from "src/models/product.model";
+import { Product, ProductDetails } from "../models/product.model";
 import { v4 as uuid } from "uuid";
 
 class ProductRepository {
